@@ -1,0 +1,53 @@
+- generic [ref=e2]:
+  - generic: +
+  - generic: Трава
+  - generic [ref=e4]:
+    - generic [ref=e5]: 60 FPS
+    - generic [ref=e6]: "X: 32.5 Y: 12.7 Z: 32.5"
+    - generic [ref=e7] [cursor=pointer]: 🚶 Ходьба
+  - generic [ref=e8]:
+    - generic [ref=e9] [cursor=pointer]:
+      - generic [ref=e11]: "1"
+      - generic [ref=e12]: Трава
+    - generic [ref=e13] [cursor=pointer]:
+      - generic [ref=e15]: "2"
+      - generic [ref=e16]: Земля
+    - generic [ref=e17] [cursor=pointer]:
+      - generic [ref=e19]: "3"
+      - generic [ref=e20]: Камень
+    - generic [ref=e21] [cursor=pointer]:
+      - generic [ref=e23]: "4"
+      - generic [ref=e24]: Дерево
+    - generic [ref=e25] [cursor=pointer]:
+      - generic [ref=e27]: "5"
+      - generic [ref=e28]: Доски
+    - generic [ref=e29] [cursor=pointer]:
+      - generic [ref=e31]: "6"
+      - generic [ref=e32]: Листва
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e35]: "7"
+      - generic [ref=e36]: Песок
+    - generic [ref=e37] [cursor=pointer]:
+      - generic [ref=e39]: "8"
+      - generic [ref=e40]: Кирпич
+    - generic [ref=e41] [cursor=pointer]:
+      - generic [ref=e43]: "9"
+      - generic [ref=e44]: Стекло
+  - generic [ref=e45]:
+    - generic [ref=e46]: 🎮 Мини-Майнкрафт
+    - generic [ref=e47]: WASD — двигаться
+    - generic [ref=e48]: Мышь — осмотр (клик для захвата)
+    - generic [ref=e49]: ЛКМ — сломать блок
+    - generic [ref=e50]: ПКМ — поставить блок
+    - generic [ref=e51]: Space — прыжок / вверх (в полёте)
+    - generic [ref=e52]: Shift — вниз (в полёте) / бег
+    - generic [ref=e53]: F — полёт вкл/выкл
+    - generic [ref=e54]: 1–9 / колесо — выбор блока
+  - generic:
+    - heading "⛏️ Мини-Майнкрафт" [level=1]
+    - paragraph: Мир из блоков прямо в браузере.Ходи, строй, ломай!
+    - button "▶ Играть" [active]
+    - generic:
+      - button "🌍 Новый мир"
+      - button "💾 Сохранить"
+    - generic: "Управление: WASD + мышь · ЛКМ — ломать · ПКМ — строить · F — полёт"
