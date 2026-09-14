@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Мини-Майнкрафт — браузерная игра из блоков</title>
+<link rel="stylesheet" href="style.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app">
+  <canvas id="game"></canvas>
+
+  <div id="crosshair">+</div>
+  <div id="block-highlight-info"></div>
+
+  <div id="hud-top">
+    <div id="fps">60 FPS</div>
+    <div id="pos">X: 0 Y: 0 Z: 0</div>
+    <div id="mode-badge">🚶 Ходьба</div>
+  </div>
+
+  <div id="hotbar"></div>
+
+  <div id="help">
+    <b>🎮 Мини-Майнкрафт</b><br/>
+    <span><b>WASD</b> — двигаться</span>
+    <span><b>Мышь</b> — осмотр (клик для захвата)</span>
+    <span><b>ЛКМ</b> — сломать блок</span>
+    <span><b>ПКМ</b> — поставить блок</span>
+    <span><b>Space</b> — прыжок / вверх (в полёте)</span>
+    <span><b>Shift</b> — вниз (в полёте) / бег</span>
+    <span><b>F</b> — полёт вкл/выкл</span>
+    <span><b>1–9</b> / колесо — выбор блока</span>
+  </div>
+
+  <div id="menu">
+    <h1>⛏️ Мини-Майнкрафт</h1>
+    <p>Мир из блоков прямо в браузере.<br/>Ходи, строй, ломай!</p>
+    <button id="play-btn">▶ Играть</button>
+    <div class="menu-row">
+      <button id="new-world-btn" class="secondary">🌍 Новый мир</button>
+      <button id="save-btn" class="secondary">💾 Сохранить</button>
+    </div>
+    <div class="hint">Управление: WASD + мышь · ЛКМ — ломать · ПКМ — строить · F — полёт</div>
+  </div>
+
+  <div id="toast"></div>
+  <div id="loading">Генерация мира...</div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
